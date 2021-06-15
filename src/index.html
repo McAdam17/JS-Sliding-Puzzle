@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Sliding Puzzle</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="container__tiltle">Sliding Pluzze</h1>
+        <div class="container__setup">
+            <span id="visual_help" class="setup__visual_help"></span>
+            <input 
+                class="setup__range" 
+                type="range" 
+                name="long" 
+                id="range" 
+                min="1" 
+                max="5" 
+                value="3"
+            >
+        </div>
+        <div id="board" class="sliding-pluzze">
+        </div>
+    </div>
     
+    <script src="./js/index.js"></script>
 </body>
 </html>
